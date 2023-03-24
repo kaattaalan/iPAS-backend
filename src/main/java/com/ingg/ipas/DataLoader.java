@@ -1,7 +1,7 @@
 package com.ingg.ipas;
 
-import com.ingg.ipas.models.ERole;
-import com.ingg.ipas.models.Role;
+import com.ingg.ipas.models.auth.ERole;
+import com.ingg.ipas.models.auth.Role;
 import com.ingg.ipas.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -19,6 +19,9 @@ public class DataLoader implements ApplicationRunner {
     }
 
     public void run(ApplicationArguments args) {
+        if(repository.count() > 0){
+            return;
+        }
         repository.save(new Role(ERole.ROLE_ADMIN));
         repository.save(new Role(ERole.ROLE_USER));
         repository.save(new Role(ERole.ROLE_MODERATOR));

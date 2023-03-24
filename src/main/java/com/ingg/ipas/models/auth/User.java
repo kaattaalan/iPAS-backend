@@ -1,4 +1,6 @@
-package com.ingg.ipas.models;
+package com.ingg.ipas.models.auth;
+
+import com.ingg.ipas.models.Group;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -29,6 +31,9 @@ public class User {
 
     @ManyToMany
     private Set<Role> roles = new HashSet<>();
+
+    @ManyToOne
+    private Group group;
 
     public User() {
     }

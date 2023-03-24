@@ -1,4 +1,4 @@
-package com.ingg.ipas.models;
+package com.ingg.ipas.models.auth;
 
 public enum ERole {
     ROLE_USER,

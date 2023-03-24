@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
-import com.ingg.ipas.models.Role;
+import com.ingg.ipas.models.auth.Role;
 import com.ingg.ipas.payload.request.LoginRequest;
 import com.ingg.ipas.payload.request.SignupRequest;
 import com.ingg.ipas.payload.response.JwtResponse;
@@ -29,8 +29,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ingg.ipas.models.ERole;
-import com.ingg.ipas.models.User;
+import com.ingg.ipas.models.auth.ERole;
+import com.ingg.ipas.models.auth.User;
 import com.ingg.ipas.repository.RoleRepository;
 import com.ingg.ipas.repository.UserRepository;
 

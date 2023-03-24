@@ -1,7 +1,7 @@
 package com.ingg.ipas.repository.impl;
 
-import com.ingg.ipas.models.ERole;
-import com.ingg.ipas.models.Role;
+import com.ingg.ipas.models.auth.ERole;
+import com.ingg.ipas.models.auth.Role;
 import com.ingg.ipas.repository.CustomRoleRepo;
 import org.springframework.stereotype.Repository;
 

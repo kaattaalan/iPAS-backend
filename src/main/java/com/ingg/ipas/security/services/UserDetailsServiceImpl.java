@@ -1,5 +1,5 @@
 package com.ingg.ipas.security.services;
-import com.ingg.ipas.models.User;
+import com.ingg.ipas.models.auth.User;
 import com.ingg.ipas.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

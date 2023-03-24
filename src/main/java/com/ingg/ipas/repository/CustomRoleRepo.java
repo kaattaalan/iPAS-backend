@@ -1,7 +1,7 @@
 package com.ingg.ipas.repository;
 
-import com.ingg.ipas.models.ERole;
-import com.ingg.ipas.models.Role;
+import com.ingg.ipas.models.auth.ERole;
+import com.ingg.ipas.models.auth.Role;
 
 import java.util.Optional;
 

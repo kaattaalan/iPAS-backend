@@ -1,6 +1,6 @@
 package com.ingg.ipas.repository;
 
-import com.ingg.ipas.models.User;
+import com.ingg.ipas.models.auth.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
